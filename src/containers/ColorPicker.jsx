@@ -10,16 +10,8 @@ export default class ColorPicker extends Component {
     text: ''
   }
 
-  handleBgColorChange = ({ target }) => {
-    this.setState({ bgColor: target.value });
-  }
-
-  handleFgColorChange = ({ target }) => {
-    this.setState({ fgColor: target.value });
-  }
-
-  handleTextChange = ({ target }) => {
-    this.setState({ text: target.value });
+  handleChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
   }
 
   render() {
@@ -30,9 +22,7 @@ export default class ColorPicker extends Component {
           bgColor={bgColor}
           fgColor={fgColor}
           text={text}
-          onBgColorChange={this.handleBgColorChange}
-          onFgColorChange={this.handleFgColorChange}
-          onTextChange={this.handleTextChange}
+          onChange={this.handleChange}
         />
         <ColorDisplay 
           bgColor={bgColor}

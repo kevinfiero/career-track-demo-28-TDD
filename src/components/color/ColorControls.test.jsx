@@ -9,9 +9,7 @@ describe('ColorControls component', () => {
       bgColor="#FF0000" 
       fgColor="#0000FF" 
       text="Hello!" 
-      onBgColorChange={jest.fn()}
-      onFgColorChange={jest.fn()}
-      onTextChange={jest.fn()}
+      onChange={jest.fn()}
     />);
     expect(asFragment()).toMatchSnapshot();
   });

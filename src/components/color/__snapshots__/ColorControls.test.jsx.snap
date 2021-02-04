@@ -9,6 +9,7 @@ exports[`ColorControls component renders ColorControls 1`] = `
   </label>
   <input
     id="bgColor"
+    name="bgColor"
     type="color"
     value="#FF0000"
   />
@@ -19,6 +20,7 @@ exports[`ColorControls component renders ColorControls 1`] = `
   </label>
   <input
     id="fgColor"
+    name="fgColor"
     type="color"
     value="#0000FF"
   />
@@ -29,6 +31,7 @@ exports[`ColorControls component renders ColorControls 1`] = `
   </label>
   <input
     id="text"
+    name="text"
     type="text"
     value="Hello!"
   />
